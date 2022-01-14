@@ -6,4 +6,5 @@ wdatetime.initializeDatetime();*/
 
 //WString wstring = new WString();
 //WBreakContinue wBreakContinue = new WBreakContinue();
-WEnum wEnum = new WEnum();
+//WEnum wEnum = new WEnum();
+WMagicString wMagicString = new WMagicString();
