@@ -1,4 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using Exercices;
 using Operations;
 using Programming_in_csharp;
 
@@ -10,4 +11,5 @@ wdatetime.initializeDatetime();*/
 //WEnum wEnum = new WEnum();
 //WMagicString wMagicString = new WMagicString();
 //TryCatch tryCatch = new TryCatch();
-WNullable nullable = new WNullable();
+//WNullable nullable = new WNullable();
+Exercise1 exercise1 = new Exercise1();
