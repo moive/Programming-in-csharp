@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Programming_in_csharp
+namespace Operations
 {
     internal class WMagicString
     {
