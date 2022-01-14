@@ -8,4 +8,5 @@ wdatetime.initializeDatetime();*/
 //WString wstring = new WString();
 //WBreakContinue wBreakContinue = new WBreakContinue();
 //WEnum wEnum = new WEnum();
-WMagicString wMagicString = new WMagicString();
+//WMagicString wMagicString = new WMagicString();
+TryCatch tryCatch = new TryCatch();
