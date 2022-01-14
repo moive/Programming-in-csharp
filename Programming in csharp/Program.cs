@@ -9,4 +9,5 @@ wdatetime.initializeDatetime();*/
 //WBreakContinue wBreakContinue = new WBreakContinue();
 //WEnum wEnum = new WEnum();
 //WMagicString wMagicString = new WMagicString();
-TryCatch tryCatch = new TryCatch();
+//TryCatch tryCatch = new TryCatch();
+WNullable nullable = new WNullable();
