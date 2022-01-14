@@ -4,4 +4,5 @@ using Programming_in_csharp;
 /*WDatetime wdatetime = new WDatetime();
 wdatetime.initializeDatetime();*/
 
-WString wstring = new WString();
+//WString wstring = new WString();
+WBreakContinue wBreakContinue = new WBreakContinue();
