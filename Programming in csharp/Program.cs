@@ -5,4 +5,5 @@ using Programming_in_csharp;
 wdatetime.initializeDatetime();*/
 
 //WString wstring = new WString();
-WBreakContinue wBreakContinue = new WBreakContinue();
+//WBreakContinue wBreakContinue = new WBreakContinue();
+WEnum wEnum = new WEnum();
