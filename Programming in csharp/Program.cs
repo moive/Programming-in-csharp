@@ -13,4 +13,5 @@ wdatetime.initializeDatetime();*/
 //TryCatch tryCatch = new TryCatch();
 //WNullable nullable = new WNullable();
 //Exercise1 exercise1 = new Exercise1();
-Exercise2 exercise2 = new Exercise2();
+//Exercise2 exercise2 = new Exercise2();
+Exercise3 exercise3 = new Exercise3();
