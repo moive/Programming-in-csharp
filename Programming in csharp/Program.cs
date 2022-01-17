@@ -14,4 +14,5 @@ wdatetime.initializeDatetime();*/
 //WNullable nullable = new WNullable();
 //Exercise1 exercise1 = new Exercise1();
 //Exercise2 exercise2 = new Exercise2();
-Exercise3 exercise3 = new Exercise3();
+//Exercise3 exercise3 = new Exercise3();
+Exercise4 exercise4 = new Exercise4();
