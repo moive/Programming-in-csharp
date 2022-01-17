@@ -16,4 +16,5 @@ wdatetime.initializeDatetime();*/
 //Exercise2 exercise2 = new Exercise2();
 //Exercise3 exercise3 = new Exercise3();
 //Exercise5 exercise5 = new Exercise5();
-Exercise6 exercise6 = new Exercise6();
+//Exercise6 exercise6 = new Exercise6();
+Exercise7 exercise7 = new Exercise7();
