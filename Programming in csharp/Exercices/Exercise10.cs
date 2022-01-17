@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Exercices
 {
-    //Escribir un método que acepte una lista de números y devuelva el producto de dichos números.
+    //Escribir un método que acepte una lista de números y devuelva el más grande.
     internal class Exercise10
     {
         public Exercise10()

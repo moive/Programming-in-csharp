@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Exercices
 {
-    //Escribir un método que acepte una lista de números y devuelva el producto de dichos números.
+    //Escribir un método que acepte un int que devuelve el factorial de dicho número.
     internal class Exercise8
     {
         public Exercise8()

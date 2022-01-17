@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Exercices
 {
-    //Escribir un método que acepte una lista de números y devuelva el producto de dichos números.
+    //Escribir un método que acepte una lista de números y devuelva su promedio.
     internal class Exercise9
     {
         public Exercise9()
