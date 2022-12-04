@@ -28,4 +28,12 @@ wdatetime.initializeDatetime();*/
 //Exercise15 exercise15 = new Exercise15();
 //Exercise16 exercise16 = new Exercise16();
 //Exercise17 exercise17 = new Exercise17();
-Exercise18 exercise18 = new Exercise18();
+//Exercise18 exercise18 = new Exercise18();
+
+var v1 = new ClassObject(new List<int> { 3, 4});
+var v2 = new ClassObject(new List<int> { 1, 2});
+
+ClassObject result = v1.Plus(v2);
+ClassObject result2 = v1 + v2;
+ClassObject prod = v1 * v2;
+v1++;
