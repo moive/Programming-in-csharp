@@ -45,4 +45,24 @@ namespace Method2.Application
             Console.WriteLine("The sheep {0} has been shorn", Name);
         }
     }
+
+    public class Cat : Animal
+    {
+        public Cat(string name)
+        {
+            Name = name;
+        }
+
+        public override void MakeNoise()
+        {
+            Console.WriteLine("The cat {0} say miaauu!", Name);
+        }
+    }
+
+    public class Pelican: Animal {
+        public Pelican(string name)
+        {
+            Name = name;
+        }
+    }
 }

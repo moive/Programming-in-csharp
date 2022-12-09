@@ -57,11 +57,25 @@ v1++;
 
 //Console.WriteLine(iteratorList.WriteList);
 
-List<Animal> animals = new List<Animal>();
-animals.Add(new Cow("Maria"));
-animals.Add(new Sheep("Felipe"));
+//List<Animal> animals = new List<Animal>();
+//animals.Add(new Cow("Maria"));
+//animals.Add(new Sheep("Felipe"));
 
-foreach (var animal in animals)
-{
+//foreach (var animal in animals)
+//{
+//    animal.MakeNoise();
+//}
+
+Animal cat = new Cat("Miki");
+Animal pelican = new Pelican("Ariel");
+Animal cow = new Cow("Maria");
+Animal sheep = new Sheep("Martha");
+
+AnimalMakeNoise(cat);
+AnimalMakeNoise(pelican);
+AnimalMakeNoise(cow);
+AnimalMakeNoise(sheep);
+
+static void AnimalMakeNoise(Animal animal) {
     animal.MakeNoise();
 }
