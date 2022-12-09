@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Method2.Application.MethodExtension;
+using Method2.Application;
 using Exercices;
 using Operations;
 using Programming_in_csharp;
@@ -44,6 +45,14 @@ v1++;
 //double average = new Params().CalculateAverage(4,5,7,3,7,10,100);
 //Console.WriteLine(average.ToString());
 
-Console.WriteLine(15.Power(2));
-Console.WriteLine(3.Power(3));
-Console.WriteLine(50.Double());
+//Console.WriteLine(15.Power(2));
+//Console.WriteLine(3.Power(3));
+//Console.WriteLine(50.Double());
+
+var iteratorList = new Encapsulation();
+iteratorList.List = new List<int>() { 1, 2, 3 };
+iteratorList.WriteList();
+
+iteratorList.List = null;
+
+Console.WriteLine(iteratorList.WriteList);
