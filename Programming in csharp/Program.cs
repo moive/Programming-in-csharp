@@ -39,5 +39,9 @@ ClassObject prod = v1 * v2;
 v1++;
 */
 
-double average = new Params().CalculateAverage(4,5,7,3,7,10,100);
-Console.WriteLine(average.ToString());
+//double average = new Params().CalculateAverage(4,5,7,3,7,10,100);
+//Console.WriteLine(average.ToString());
+
+Console.WriteLine(15.Power(2));
+Console.WriteLine(3.Power(3));
+Console.WriteLine(50.Double());
