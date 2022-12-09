@@ -49,10 +49,19 @@ v1++;
 //Console.WriteLine(3.Power(3));
 //Console.WriteLine(50.Double());
 
-var iteratorList = new Encapsulation();
-iteratorList.List = new List<int>() { 1, 2, 3 };
-iteratorList.WriteList();
+//var iteratorList = new Encapsulation();
+//iteratorList.List = new List<int>() { 1, 2, 3 };
+//iteratorList.WriteList();
 
-iteratorList.List = null;
+//iteratorList.List = null;
 
-Console.WriteLine(iteratorList.WriteList);
+//Console.WriteLine(iteratorList.WriteList);
+
+List<Animal> animals = new List<Animal>();
+animals.Add(new Cow("Maria"));
+animals.Add(new Sheep("Felipe"));
+
+foreach (var animal in animals)
+{
+    animal.MakeNoise();
+}
