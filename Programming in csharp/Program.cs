@@ -5,4 +5,4 @@ using Exercices;
 using Operations;
 using Programming_in_csharp;
 
-new DependencyInjection();
+new AnonymousDinamic();
