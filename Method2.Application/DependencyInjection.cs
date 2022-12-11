@@ -15,9 +15,25 @@ namespace Method2.Application
     {
         public DependencyInjection()
         {
-            var smsSender = new SendMinMessage();
-            var messageSender = new MessageSender(smsSender);
+            var messageSenderDependency = FactoryMessageSender.Factory("email");
+            var messageSender = new MessageSender(messageSenderDependency);
             messageSender.SendMessage("This message is cool");
+        }
+    }
+
+    public static class FactoryMessageSender
+    {
+        public static IMessageSender Factory(string parameter)
+        {
+            if (parameter == "sms")
+            {
+                return new SendMinMessage();
+            }
+            else if (parameter == "email")
+            {
+                return new SendEmail();
+            }
+            throw new ApplicationException();
         }
     }
 
