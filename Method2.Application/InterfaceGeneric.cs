@@ -15,7 +15,7 @@ namespace Method2.Application
     {
         public InterfaceGeneric()
         {
-            var myDoubleCollection = new MyDoubleCollection<string, int>(1);
+            var myDoubleCollection = new MyDoubleCollection<string, int>();
             myDoubleCollection.Add("Moises", 7);
         }
 
