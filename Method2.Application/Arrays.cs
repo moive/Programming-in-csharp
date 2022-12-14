@@ -10,9 +10,10 @@ namespace Method2.Application
     {
         public Arrays()
         {
-            runUnidimensional();
+            //runUnidimensional();
 
-            runBidimensional();
+            //runBidimensional();
+            runMatrix();
         }
 
         public void runUnidimensional()
@@ -48,7 +49,7 @@ namespace Method2.Application
                 {3, 4},{5, 6}
             };
 
-            Console.WriteLine("matrixB[1,1]: {0}", matrixB[1,1]);
+            Console.WriteLine("matrixB[1,1]: {0}", matrixB[1, 1]);
             Console.WriteLine("");
 
             string[,] matrixC = new string[3, 2] {
@@ -60,7 +61,8 @@ namespace Method2.Application
             WhiteArrayBidimensional<string>(matrixC);
         }
 
-        public void WhiteArrayBidimensional<T>(T[,] matrix) {
+        public void WhiteArrayBidimensional<T>(T[,] matrix)
+        {
             var rows = matrix.GetLength(0);
             var columns = matrix.GetLength(1);
             var sb = new StringBuilder();
@@ -76,5 +78,23 @@ namespace Method2.Application
             }
             Console.WriteLine(sb.ToString());
         }
+
+        public void runMatrix()
+        {
+            Matrix matrix = new Matrix(2, 2);
+            matrix[0, 0] = 5;
+            matrix[0, 1] = -5;
+            matrix[1, 0] = 1;
+            matrix[1, 1] = 4;
+
+            Matrix matrixB = new Matrix(2, 2);
+            matrixB[0, 0] = 1;
+            matrixB[0, 1] = 6;
+            matrixB[1, 0] = 3;
+            matrixB[1, 1] = 10;
+
+            Matrix matrixplus = matrix + matrixB;
+            Console.WriteLine(matrixplus.ToString());
     }
+        }
 }
