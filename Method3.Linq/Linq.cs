@@ -22,6 +22,8 @@ namespace Method3.Linq
             //var result = numbers.Where((x, index) => index % 2 == 0).ToList();
             var result = numbers.Where(x => x > 0).OrderByDescending(x => x).ToList();
 
+            var getTakeSkip = numbers.Skip(1).Take(3).ToList();
+
             List<Person> persons = new List<Person>() {
                 new Person(){Name = "María", Age = 99, Salary=5},
                 new Person(){Name = "Claudia", Age = 35, Salary=7},
