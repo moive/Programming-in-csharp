@@ -17,10 +17,17 @@ namespace Method2.Application
 
             Console.WriteLine(fromIntegerToString(10));
             Console.WriteLine(fromIntegerToStringPlusOne(10));
+
+            Func<int, string> delegateFunc = FunctionReturnToStringPlus1;
+            var result = delegateFunc(15);
+            Console.WriteLine(result);
+
         }
 
         public string FunctionReturnToString(int value) => value.ToString();
 
         public string FunctionReturnToStringPlus1(int value) => (value + 1).ToString();
+
+        public void Example(int a, string b) { }
     }
 }
