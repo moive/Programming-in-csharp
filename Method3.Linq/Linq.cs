@@ -16,8 +16,10 @@ namespace Method3.Linq
         public void LinqDemo()
         {
             List<int> numbers = new List<int>() { 3, 5, 7, 8, 2, -3, -100, 523, 6, 22 };
+            //numbers.Reverse(1,8); //reverse 5, ..., 6
             //var result = numbers.Where((x, index) => index % 2 == 0).ToList();
             var result = numbers.Where(x => x > 0).OrderByDescending(x => x).ToList();
+
 
             List<Person> persons = new List<Person>() {
                 new Person(){Name = "María", Age = 99, Salary=5},
