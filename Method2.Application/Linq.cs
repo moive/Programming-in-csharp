@@ -16,7 +16,8 @@ namespace Method2.Application
         public void LinqDemo()
         {
             List<int> numbers = new List<int>() { 3, 5, 7, 8, 2, -3, -100, 523, 6, 22 };
-            var result = numbers.Where(x => x > 0 && x % 2 == 0).ToList();
+            //var result = numbers.Where(x => x > 0 && x % 2 == 0).ToList();
+            var result = numbers.Where((x, index) => index % 2 == 0).ToList();
 
         }
     }
