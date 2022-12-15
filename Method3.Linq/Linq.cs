@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Method2.Application
+namespace Method3.Linq
 {
     public class Linq
     {

@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Method2.Application\Method2.Application.csproj" />
+    <ProjectReference Include="..\Method3.Linq\Method3.Linq.csproj" />
   </ItemGroup>
 
 </Project>
