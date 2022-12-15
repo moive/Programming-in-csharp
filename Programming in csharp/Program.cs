@@ -6,4 +6,4 @@ using Operations;
 using Programming_in_csharp;
 using Delegate = Method2.Application.Delegate;
 
-new ExpresionLambda();
+new Linq();
