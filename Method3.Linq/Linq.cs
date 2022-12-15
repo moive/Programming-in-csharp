@@ -32,7 +32,7 @@ namespace Method3.Linq
 
             var personUnderAge = persons.Where(x => x.Age < 18)
                 .OrderByDescending(x => x.Age)
-                .Select(x => new Person()
+                .Select(x => new
                 {
                     Name = x.Name,
                     Age = x.Age,
