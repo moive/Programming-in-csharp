@@ -4,5 +4,6 @@ using Method2.Application;
 using Exercices;
 using Operations;
 using Programming_in_csharp;
+using Delegate = Method2.Application.Delegate;
 
-new Arrays();
+new Delegate();
