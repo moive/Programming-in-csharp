@@ -22,6 +22,7 @@ namespace Method2.Application
             var result = delegateFunc(15);
             Console.WriteLine(result);
 
+            Action<int, string> delegateAction = Example;
         }
 
         public string FunctionReturnToString(int value) => value.ToString();
