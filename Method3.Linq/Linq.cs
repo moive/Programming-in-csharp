@@ -32,7 +32,11 @@ namespace Method3.Linq
 
             var personUnderAge = persons.Where(x => x.Age < 18)
                 .OrderByDescending(x => x.Age)
-                .Select(x => x.Name)
+                .Select(x => new Person()
+                {
+                    Name = x.Name,
+                    Age = x.Age,
+                })
                 .FirstOrDefault();
 
             var listPersons = persons.OrderBy(x => x.Salary).ThenBy(x => x.Name).ToList();
