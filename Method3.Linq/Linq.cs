@@ -49,6 +49,14 @@ namespace Method3.Linq
 
             var listPersons = persons.OrderBy(x => x.Salary).ThenBy(x => x.Name).ToList();
 
+            var totalSalary = persons.Sum(x => x.Salary);
+
+            var myObject = new
+            {
+                TotalSalary = totalSalary,
+                Count = persons.Count()
+            };
+
 
             var groupBy = numbers.GroupBy(x => Math.Abs(x % 2));
 
