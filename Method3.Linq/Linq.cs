@@ -58,6 +58,32 @@ namespace Method3.Linq
                 }
                 Console.WriteLine("");
             }
+
+            var groupByPerson = persons.GroupBy(x =>
+            {
+                if (x.Age <= 20)
+                {
+                    return "Less than 20";
+                }
+                else if (x.Age >= 21 && x.Age <= 40)
+                {
+                    return "Between 21 and 40";
+                }
+                else
+                {
+                    return "Greater than 41";
+                }
+            });
+
+            foreach (var groupPerson in groupByPerson)
+            {
+                Console.WriteLine("Group by: " + groupPerson.Key + " --- amount: " + groupPerson.Count());
+                foreach (var person in groupPerson)
+                {
+                    Console.WriteLine(person.Name);
+                }
+                Console.WriteLine("");
+            }
         }
     }
 
