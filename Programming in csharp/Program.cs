@@ -12,8 +12,15 @@ Console.WriteLine(message);
 var builder = new SqlConnectionStringBuilder();
 builder.DataSource = @"MVELASQUEZ";
 builder.InitialCatalog = "Prueba";
-builder.IntegratedSecurity = true;
+builder.IntegratedSecurity = false;
+builder.UserID = "sa";
+builder.Password = "1234567890";
 
 var connectionString = builder.ToString();
 
-Console.ReadKey();
+
+using (SqlConnection sql = new SqlConnection(connectionString)) {
+    sql.Open();
+}
+
+    Console.ReadKey();
