@@ -64,6 +64,8 @@ namespace Method3.Linq
 
             var groupBy = numbers.GroupBy(x => Math.Abs(x % 2));
 
+            var productAggregate =numbers.Aggregate((acc, elem)=>acc * elem);
+
             foreach (var item in groupBy)
             {
                 Console.WriteLine("Numbers whose residues are: " + item.Key);

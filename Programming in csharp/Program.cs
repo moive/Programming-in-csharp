@@ -3,5 +3,8 @@ using Exercices;
 using Method3.Linq;
 using Operations;
 using Programming_in_csharp;
+using System.Configuration;
 
-new Linq();
+var message = ConfigurationManager.AppSettings["message"];
+Console.WriteLine(message);
+Console.ReadKey();
