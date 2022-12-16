@@ -46,6 +46,18 @@ namespace Method3.Linq
 
             var listPersons = persons.OrderBy(x => x.Salary).ThenBy(x => x.Name).ToList();
 
+
+            var groupBy = numbers.GroupBy(x => Math.Abs(x % 2));
+
+            foreach (var item in groupBy)
+            {
+                Console.WriteLine("Numbers whose residues are: " + item.Key);
+                foreach (var num in item)
+                {
+                    Console.WriteLine(num);
+                }
+                Console.WriteLine("");
+            }
         }
     }
 
