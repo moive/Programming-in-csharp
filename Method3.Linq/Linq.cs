@@ -57,6 +57,10 @@ namespace Method3.Linq
                 Count = persons.Count()
             };
 
+            var salaryMin = persons.Min(x => x.Salary);
+            var salaryMax = persons.Max(x => x.Salary);
+            var averageAge = persons.Average(x => x.Age);
+
 
             var groupBy = numbers.GroupBy(x => Math.Abs(x % 2));
 
