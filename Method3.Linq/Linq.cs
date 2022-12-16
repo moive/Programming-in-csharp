@@ -24,6 +24,9 @@ namespace Method3.Linq
 
             var getTakeSkip = numbers.Skip(1).Take(3).ToList();
 
+            var takeWhile = numbers.TakeWhile(x => x < 6).ToList();
+            var skipWhite = numbers.SkipWhile(x => x < 6).ToList();
+
             List<Person> persons = new List<Person>() {
                 new Person(){Name = "María", Age = 99, Salary=5},
                 new Person(){Name = "Claudia", Age = 35, Salary=7},
