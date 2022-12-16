@@ -27,6 +27,9 @@ namespace Method3.Linq
             var takeWhile = numbers.TakeWhile(x => x < 6).ToList();
             var skipWhite = numbers.SkipWhile(x => x < 6).ToList();
 
+            var areEven = numbers.All(x=> x% 2 == 0);
+            var IsThereAnyOddNumber = numbers.Any(x => x % 2 == 0);
+
             List<Person> persons = new List<Person>() {
                 new Person(){Name = "María", Age = 99, Salary=5},
                 new Person(){Name = "Claudia", Age = 35, Salary=7},
